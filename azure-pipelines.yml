@@ -8,7 +8,7 @@ trigger:
 #pool:
  # name: Default
 
-appendCommitMessageToRunName:
+#appendCommitMessageToRunName:
 resources:
 - repo: self
 
