@@ -5,11 +5,12 @@
 trigger:
 - main
 
+pool:
+ name: Default
+
 resources:
 - repo: self
-
-pool:
- name: Default 
+ 
 
 variables:
   tag: '$(Build.BuildId)'
