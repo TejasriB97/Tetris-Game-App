@@ -13,8 +13,8 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-#  dockerRegistryServiceConnection: '321886c9-c54d-481f-a744-66cac9fc7db6'
-  dockerRegistryServiceConnection: '7b4af03e-a7c5-42e3-af6e-b9f5abef89a4'
+  dockerRegistryServiceConnection: '321886c9-c54d-481f-a744-66cac9fc7db6'
+  #dockerRegistryServiceConnection: '7b4af03e-a7c5-42e3-af6e-b9f5abef89a4'
   imageRepository: 'tetrisgameapp'
   containerRegistry: 'tejuregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
@@ -42,3 +42,4 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+      runAsAdmin: true
